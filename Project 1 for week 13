@@ -1,1 +1,34 @@
+hello
+"""
+"""
 
+There should be at least 1 table containing 7 fields and 10 rows.  AS A TEAM create the database and enter the data.
+Include the code and sample runs.
+(Later you will also create a mainline that will display the information in the database and allow the user to edit any record.)
+
+import sqlite3
+
+connection = sqlite3.connect("students.db")
+cursor = connection.cursor()
+cursor.execute("create table students (first_name text, last_name text, phone , street, city, zip, SSN)")
+
+cities_list = [
+(', 'Minneapolis ', 8537673),
+(2, 'Saint Paul', 3977683),
+(3, 'Burnsville', 2716000),
+(4, 'Bloomington', 2320268),
+(5, 'Mankato', 1680992),
+(6, 'Lakeville', 1584064),
+(7, 'Savage', 1547253),
+(8, 'Apple Valley', 1425976),
+(9, 'Afton', 1343573),
+(10, 'Saint Cloud', 1030119)
+]
+cursor.executemany("insert into cities values (?,?,?)", cities_list)
+
+for row in cursor.execute("select * from cities"):
+    print(row)
+
+cursor.execute("select * from cities where ID=:a", {"a": "5"})
+
+connection.close()

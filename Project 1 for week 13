@@ -24,11 +24,4 @@ cities_list = [
 (9, 'Afton', 1343573),
 (10, 'Saint Cloud', 1030119)
 ]
-cursor.executemany("insert into cities values (?,?,?)", cities_list)
-
-for row in cursor.execute("select * from cities"):
-    print(row)
-
-cursor.execute("select * from cities where ID=:a", {"a": "5"})
-
 connection.close()

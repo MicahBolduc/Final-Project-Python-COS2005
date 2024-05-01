@@ -13,7 +13,7 @@ cursor = connection.cursor()
 cursor.execute("create table students (first_name text, last_name text, phone integer, street text, city text, zip integer, SSN integer)")
 
 cities_list = [
-(', 'Minneapolis ', 8537673),
+'micah', 'Minneapolis ', 8537673),
 (2, 'Saint Paul', 3977683),
 (3, 'Burnsville', 2716000),
 (4, 'Bloomington', 2320268),

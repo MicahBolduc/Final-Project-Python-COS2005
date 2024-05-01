@@ -14,9 +14,9 @@ student_list = [
 (2, 'John', 'Drury', 6122136223, 'Glazier Ave.', 'Apple Valley', 55423, 1987654320),
 (3, 'Owen', 'Watterson', 6123696139, 'McColl Dr.', 'Burnsville', 55379, 2345678901),
 (4, 'Kaden', 'Buldogg', 9523939750, 'Humberg Crt.', 'London', 90, 3456789012),
-(5, 'Patrick', 'Jane', 9168754344, 'Red St.', 'Sacramento', 94203, 885149956),
-(6, 'Lakeville', 1584064),
-(7, 'Savage', 1547253),
+(5, 'Joshua', 'Goldberg', 9126896230, 'P.O. Box 26', 'Lake Bronson', 56734, 991199119),
+(6, 'Patrick', 'Jane', 9168754344, 'Red St.', 'Sacramento', 94203, 885149956),
+(7, 'Michael', 'Westin', 3054161199, 'Central Ave.', 'Miami', 33101, 1584064),
 (8, 'Noah', 'Morfitt', 9522340764, 'Heron Lane', 'Victoria', 'Minnesota', 55386,  9999999999),
 (9, 'Steve', 'Jobs', 6121230000, 'Waverly Street', 'Palto Alto', 'California', 94303,  1295302394),
 (10, 'Alexander', 'Bell', 1, 'Conneticut Avenue', 'Washington', 'DC', 20036,  3209537829)

@@ -1,10 +1,7 @@
-hello
+"""Authors: Micah, Noah, Joshua
+Name: Project 1 Week 13
+Date: 5/2/2024
 """
-"""
-
-There should be at least 1 table containing 7 fields and 10 rows.  AS A TEAM create the database and enter the data.
-Include the code and sample runs.
-(Later you will also create a mainline that will display the information in the database and allow the user to edit any record.)
 
 import sqlite3
 
@@ -13,10 +10,10 @@ cursor = connection.cursor()
 cursor.execute("create table students (first_name text, last_name text, phone integer, street text, city text, zip integer, SSN integer)")
 
 cities_list = [
-'micah', 'Minneapolis ', 8537673),
-(2, 'Saint Paul', 3977683),
-(3, 'Burnsville', 2716000),
-(4, 'Bloomington', 2320268),
+('Micah', 'Bolduc ', 9524520035, 'Ottawa Ave.', 'Savage', 55378, 1234567890),
+('John', 'Drury', 6122136223, 'Glazier Ave.', 'Apple Valley', 55423, 1987654320),
+('Owen', 'Watterson', 6123696139, 'McColl Dr.', 'Burnsville', 55379, 2345678901),
+('Kaden', 'Buldogg', 9523939750, 'Humberg Crt.', 'London', 90, 3456789012),
 (5, 'Mankato', 1680992),
 (6, 'Lakeville', 1584064),
 (7, 'Savage', 1547253),
@@ -27,5 +24,5 @@ cities_list = [
 connection.close()
 
 
-We agree that a reasonable amount of work
--  -  -  
+We agree that we each did a reasonable amount of work comparitivly with how much work was due for this project:
+~Micah Bolduc  ~  ~  

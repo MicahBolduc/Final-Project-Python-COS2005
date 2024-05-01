@@ -25,3 +25,7 @@ cities_list = [
 (10, 'Saint Cloud', 1030119)
 ]
 connection.close()
+
+
+We agree that a reasonable amount of work
+-  -  -  

@@ -10,10 +10,10 @@ cursor = connection.cursor()
 cursor.execute("create table students (student_id integer primary key, first_name text, last_name text, phone integer, street text, city text, zip integer, SSN integer)")
 
 student_list = [
-(1, 'Micah', 'Bolduc ', 9524520035, 'Ottawa Ave.', 'Savage', 55378, 1234567890),
-(2, 'John', 'Drury', 6122136223, 'Glazier Ave.', 'Apple Valley', 55423, 1987654320),
-(3, 'Owen', 'Watterson', 6123696139, 'McColl Dr.', 'Burnsville', 55379, 2345678901),
-(4, 'Kaden', 'Buldogg', 9523939750, 'Humberg Crt.', 'London', 90, 3456789012),
+(1, 'Micah', 'Bolduc ', 9524520035, 'Ottawa Ave.', 'Savage', 55378, 123456789),
+(2, 'John', 'Drury', 6122136223, 'Glazier Ave.', 'Apple Valley', 55423, 198765432),
+(3, 'Owen', 'Watterson', 6123696139, 'McColl Dr.', 'Burnsville', 55379, 234567890),
+(4, 'Kaden', 'Buldogg', 9523939750, 'Humberg Crt.', 'London', 90, 345678901),
 (5, 'Joshua', 'Goldberg', 9126896230, 'P.O. Box 26', 'Lake Bronson', 56734, 991199119),
 (6, 'Patrick', 'Jane', 9168754344, 'Red St.', 'Sacramento', 94203, 885149956),
 (7, 'Michael', 'Westin', 3054161199, 'Central Ave.', 'Miami', 33101, 1584064),

@@ -10,18 +10,18 @@ cursor = connection.cursor()
 cursor.execute("create table students (student_id integer primary key, first_name text, last_name text, phone integer, street text, city text, zip integer, SSN integer)")
 
 student_list = [
-(1, 'Micah', 'Bolduc ', 9524520035, 'Ottawa Ave.', 'Savage', 55378, 123456789),
-(2, 'John', 'Drury', 6122136223, 'Glazier Ave.', 'Apple Valley', 55423, 198765432),
-(3, 'Owen', 'Watterson', 6123696139, 'McColl Dr.', 'Burnsville', 55379, 234567890),
-(4, 'Kaden', 'Buldogg', 9523939750, 'Humberg Crt.', 'London', 90, 345678901),
-(5, 'Joshua', 'Goldberg', 9126896230, 'P.O. Box 26', 'Lake Bronson', 56734, 991199119),
-(6, 'Patrick', 'Jane', 9168754344, 'Red St.', 'Sacramento', 94203, 885149956),
-(7, 'Michael', 'Westin', 3054161199, 'Central Ave.', 'Miami', 33101, 1584064),
-(8, 'Noah', 'Morfitt', 9522340764, 'Heron Lane', 'Victoria', 'Minnesota', 55386,  999999999),
-(9, 'Steve', 'Jobs', 6121230000, 'Waverly Street', 'Palto Alto', 'California', 94303,  129530239),
-(10, 'Alexander', 'Bell', 1, 'Conneticut Avenue', 'Washington', 'DC', 20036,  320953782)
+(1, 'Micah', 'Bolduc ', 9524520035, 'Ottawa Ave.', 'Savage', 55378, 'Minnesota'),
+(2, 'John', 'Drury', 6122136223, 'Glazier Ave.', 'Apple Valley', 55423, 'Minnesota'),
+(3, 'Owen', 'Watterson', 6123696139, 'McColl Dr.', 'Burnsville', 55379, 'Minnesota'),
+(4, 'Kaden', 'Buldogg', 9523939750, 'Humberg Crt.', 'London', 90, ''),
+(5, 'Joshua', 'Goldberg', 9126896230, 'P.O. Box 26', 'Lake Bronson', 56734, 'Minnesota'),
+(6, 'Patrick', 'Jane', 9168754344, 'Red St.', 'Sacramento', 94203, 'California'),
+(7, 'Michael', 'Westin', 3054161199, 'Central Ave.', 'Miami', 33101, 'Florida'),
+(8, 'Noah', 'Morfitt', 9522340764, 'Heron Lane', 'Victoria', 'Minnesota', 55386, 999999999),
+(9, 'Steve', 'Jobs', 6121230000, 'Waverly Street', 'Palto Alto', 'California', 94303, 129530239),
+(10, 'Alexander', 'Bell', 1, 'Conneticut Avenue', 'Washington', '', 20036, 320953782)
 ]
-cursor.executemany("insert into students values (?,?,?)", student_list)
+cursor.executemany("insert into students values (?,?,?,?,?,?,?)", student_list)
 
 connection.close()
 

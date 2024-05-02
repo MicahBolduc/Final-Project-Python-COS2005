@@ -7,7 +7,7 @@ import sqlite3
 
 connection = sqlite3.connect("students.db")
 cursor = connection.cursor()
-cursor.execute("create table students (student_id integer primary key, first_name text, last_name text, phone integer, street text, city text, zip integer, SSN integer)")
+cursor.execute("create table students (student_id integer primary key, first_name text, last_name text, phone integer, street text, city text, zip integer)")
 
 student_list = [
 (1, 'Micah', 'Bolduc ', 9524520035, 'Ottawa Ave.', 'Savage', 55378),
@@ -17,16 +17,18 @@ student_list = [
 (5, 'Joshua', 'Goldberg', 9126896230, 'P.O. Box 26', 'Lake Bronson', 56734),
 (6, 'Patrick', 'Jane', 9168754344, 'Red St.', 'Sacramento', 94203),
 (7, 'Michael', 'Westin', 3054161199, 'Central Ave.', 'Miami', 33101),
-(8, 'Noah', 'Morfitt', 9522340764, 'Heron Lane', 'Victoria', 'Minnesota', 55386, 999999999),
-(9, 'Steve', 'Jobs', 6121230000, 'Waverly Street', 'Palto Alto', 'California', 94303, 129530239),
-(10, 'Alexander', 'Bell', 1, 'Conneticut Avenue', 'Washington', '', 20036, 320953782)
+(8, 'Noah', 'Morfitt', 9522340764, 'Heron Lane', 'Victoria', 55386),
+(9, 'Steve', 'Jobs', 6121230000, 'Waverly Street', 'Palto Alto', 94303),
+(10, 'Alexander', 'Bell', 1, 'Conneticut Avenue', 'Washington', 20036)
 ]
 cursor.executemany("insert into students values (?,?,?,?,?,?,?)", student_list)
+
+connection.commit()
 
 connection.close()
 
 
-# We agree that we each did a reasonable amount of work comparitivly with how much work was due for this project:
-# ~Micah Bolduc  
-# ~Noah Morfitt  
+# We agree that we each did a reasonable amount of work comparatively with how much work was due for this project:
+# ~Micah Bolduc
+# ~Noah Morfitt
 # ~Joshua Goldberg

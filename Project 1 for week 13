@@ -21,6 +21,8 @@ student_list = [
 (9, 'Steve', 'Jobs', 6121230000, 'Waverly Street', 'Palto Alto', 'California', 94303,  1295302394),
 (10, 'Alexander', 'Bell', 1, 'Conneticut Avenue', 'Washington', 'DC', 20036,  3209537829)
 ]
+cursor.executemany("insert into students values (?,?,?)", student_list)
+
 connection.close()
 
 

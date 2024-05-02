@@ -8,7 +8,8 @@ import sqlite3
 connection = sqlite3.connect("students.db")
 cursor = connection.cursor()
 cursor.execute('drop table if exists students')
-cursor.execute("create table students (student_id integer primary key, first_name text, last_name text, phone integer, street text, city text, zip integer)")
+cursor.execute("create table students (student_id integer primary key, first_name text, last_name text, "
+               "phone integer, street text, city text, zip integer)")
 
 student_list = [(1, 'Micah', 'Bolduc ', 9524520035, 'Ottawa Ave.', 'Savage', 55378),
                 (2, 'John', 'Drury', 6122136223, 'Glazier Ave.', 'Apple Valley', 55423),

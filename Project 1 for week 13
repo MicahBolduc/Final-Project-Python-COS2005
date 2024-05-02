@@ -17,9 +17,9 @@ student_list = [
 (5, 'Joshua', 'Goldberg', 9126896230, 'P.O. Box 26', 'Lake Bronson', 56734, 991199119),
 (6, 'Patrick', 'Jane', 9168754344, 'Red St.', 'Sacramento', 94203, 885149956),
 (7, 'Michael', 'Westin', 3054161199, 'Central Ave.', 'Miami', 33101, 1584064),
-(8, 'Noah', 'Morfitt', 9522340764, 'Heron Lane', 'Victoria', 'Minnesota', 55386,  9999999999),
-(9, 'Steve', 'Jobs', 6121230000, 'Waverly Street', 'Palto Alto', 'California', 94303,  1295302394),
-(10, 'Alexander', 'Bell', 1, 'Conneticut Avenue', 'Washington', 'DC', 20036,  3209537829)
+(8, 'Noah', 'Morfitt', 9522340764, 'Heron Lane', 'Victoria', 'Minnesota', 55386,  999999999),
+(9, 'Steve', 'Jobs', 6121230000, 'Waverly Street', 'Palto Alto', 'California', 94303,  129530239),
+(10, 'Alexander', 'Bell', 1, 'Conneticut Avenue', 'Washington', 'DC', 20036,  320953782)
 ]
 cursor.executemany("insert into students values (?,?,?)", student_list)
 

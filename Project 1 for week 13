@@ -9,18 +9,18 @@ connection = sqlite3.connect("students.db")
 cursor = connection.cursor()
 cursor.execute('drop table if exists students')
 cursor.execute("create table students (student_id integer primary key, first_name text, last_name text, "
-               "phone integer, street text, city text, zip integer)")
+               "phone text, street text, city text, zip text)")
 # The data for each student
-student_list = [(1, 'Micah', 'Bolduc ', 9524520035, 'Ottawa Ave.', 'Savage', 55378),
-                (2, 'John', 'Drury', 6122136223, 'Glazier Ave.', 'Apple Valley', 55423),
-                (3, 'Owen', 'Watterson', 6123696139, 'McColl Dr.', 'Burnsville', 55379),
-                (4, 'Kaden', 'Buldogg', 9523939750, 'Humberg Crt.', 'London', 90),
-                (5, 'Joshua', 'Goldberg', 9126896230, 'P.O. Box 26', 'Lake Bronson', 56734),
-                (6, 'Patrick', 'Jane', 9168754344, 'Red St.', 'Sacramento', 94203),
-                (7, 'Michael', 'Westin', 3054161199, 'Central Ave.', 'Miami', 33101),
-                (8, 'Noah', 'Morfitt', 9522340764, 'Heron Lane', 'Victoria', 55386),
-                (9, 'Steve', 'Jobs', 6121230000, 'Waverly Street', 'Palto Alto', 94303),
-                (10, 'Alexander', 'Bell', 1, 'Conneticut Avenue', 'Washington', 20036)
+student_list = [(1, 'Micah', 'Bolduc ', '9524520035', 'Ottawa Ave.', 'Savage', '55378'),
+                (2, 'John', 'Drury', '6122136223', 'Glazier Ave.', 'Apple Valley', '55423'),
+                (3, 'Owen', 'Watterson', '6123696139', 'McColl Dr.', 'Burnsville', '55379'),
+                (4, 'Kaden', 'Buldogg', '9523939750', 'Humberg Crt.', 'London', '90'),
+                (5, 'Joshua', 'Goldberg', '9126896230', 'P.O. Box 26', 'Lake Bronson', '56734'),
+                (6, 'Patrick', 'Jane', '9168754344', 'Red St.', 'Sacramento', '94203'),
+                (7, 'Michael', 'Westin', '3054161199', 'Central Ave.', 'Miami', '33101'),
+                (8, 'Noah', 'Morfitt', '9522340764', 'Heron Lane', 'Victoria', '55386'),
+                (9, 'Steve', 'Jobs', '6121230000', 'Waverly Street', 'Palto Alto', '94303'),
+                (10, 'Alexander', 'Bell', '1', 'Conneticut Avenue', 'Washington', '20036')
                 ]
 # Inserting the data, saving the changes, and closing the connection
 cursor.executemany("insert into students values (?,?,?,?,?,?,?)", student_list)
